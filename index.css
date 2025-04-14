@@ -1,110 +1,128 @@
-/*.b{
-    /*background: url("C:\Users\HP\OneDrive\Pictures\download images\img.jpg") no-repeat;
-   background-size: cover;
-   background-position: center;*/
- /*  background-color:black;} */
-
- .form{
-    background-color: rgb(241, 243, 242);
-    border:2px solid;
-    margin:auto;
-    margin-top: 200px;
-    width: 30%;
-    height:20%;
-    border-radius: 10px;
-    padding: 30px;
-    margin-bottom:10px;
-    background: transparent;
-    border: 2px solid rgba(12, 12, 12, 0.945);
-    backdrop-filter: blur(2px);
-    box-shadow: 0 0 5px rgb(11, 11, 11),0 0 20px rgb(244, 240, 240);
+body {
+    background: url("https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1470&q=80") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
 }
-.c{
+
+.form {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(12, 12, 12, 0.945);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px rgb(11, 11, 11), 0 0 20px rgb(244, 240, 240);
+    width: 30%;
+    padding: 30px;
+    margin: 200px auto 10px auto;
+    height: auto;
+}
+
+.c {
     background-color: rgb(13, 245, 21);
     color: rgb(246, 240, 240);
     padding: 15px;
     width: 100%;
-    border-radius:20cqmax;
+    border-radius: 20px;
     cursor: pointer;
     text-align: center;
     border: none;
     font-size: 23px;
-    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.3s ease;
 }
-.c:hover{
+
+.c:hover {
     background-color: rgb(14, 16, 15);
     transform: scale(0.9);
 }
-.d{
+
+.d {
     font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: #fff;
 }
-.form .e{
-    width:100%;
+
+.form .e {
+    width: 100%;
     height: 50px;
     position: relative;
-    margin: 30px 0;
-    margin-bottom:1px;
+    margin: 30px 0 1px 0;
 }
+
 .e input {
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 40px;
     outline: none;
     border: 2px solid rgba(10, 10, 10, 0.959);
     font-size: 20px;
-    padding-left: 10px;
+    padding-left: 20px;
+    color: #fff;
 }
+
+.e input:focus {
+    border-color: #0f0;
+}
+
 .e input::placeholder {
     color: #f9f9f9;
     font-size: 20px;
-    padding-left: 20px;
 }
+
 .e i {
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
-    size: 10px;
 }
-.f{
-      margin-bottom: 20px;
-      font-size: 23px;
-}
-.g{
-    text-align: center;
-    font-family: 'Times New Roman';
+
+.f {
+    margin-bottom: 20px;
     font-size: 23px;
 }
-.g p a {
-    text-decoration: black;
-    font-weight: 600;
+
+.f label {
+    color: #fff;
     padding-left: 20px;
 }
-.g p a:hover{
-    text-decoration: underline;
-}
+
 .f a {
     text-decoration: none;
     margin-right: 20px;
     padding-left: 150px;
- }
- .f label {
-    color: #fff;
-    padding-left: 20px;
- }
- .f a:hover{
+}
+
+.f a:hover {
     text-decoration: underline;
- }
- @media (max-width:360px) {
-    .form{
-        width: 100%;
-        height: 100%;}
- }
- .g p {
+}
+
+.g {
+    text-align: center;
+    font-size: 23px;
+}
+
+.g p {
     color: #fff;
- }
+}
+
+.g p a {
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 20px;
+    color: inherit;
+}
+
+.g p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 90%;
+        margin-top: 100px;
+        padding: 20px;
+    }
+}
