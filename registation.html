@@ -1,11 +1,48 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <h1>welcom to Registation</h1>
+<div class="form">
+    <form>
+        <h1 class="d">Register</h1>
+
+        <div class="e">
+            <input type="text" name="username" id="username" placeholder="User Name">
+            <i class='bx bxs-user'></i>
+        </div>
+
+        <div class="e">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <i class='bx bxs-envelope'></i>
+        </div>
+
+        <div class="e">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <i class='bx bxs-lock'></i>
+        </div>
+
+        <div class="e">
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password">
+            <i class='bx bxs-lock'></i>
+        </div>
+
+        <br><br>
+
+        <div class="f">
+            <label><input type="checkbox" required> I agree to the terms & conditions</label>
+        </div>
+
+        <input type="submit" value="Register" class="c">
+
+        <div class="g">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </form>
+</div>
+
 </body>
 </html>
